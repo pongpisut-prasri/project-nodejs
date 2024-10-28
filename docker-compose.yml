@@ -1,0 +1,11 @@
+version: "3"
+services:
+  backend:
+    build: .
+    ports:
+      - 9880:3000
+      
+  mongodb-image:
+    image: mongo
+    ports:
+      - 27018:27017
