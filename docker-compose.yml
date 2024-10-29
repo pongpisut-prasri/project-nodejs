@@ -4,6 +4,8 @@ services:
     build: .
     ports:
       - 9880:3000
+    depends_on:
+      - mongodb-image
       
   mongodb-image:
     image: mongo
